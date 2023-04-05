@@ -1,0 +1,111 @@
+#app {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+form {
+    margin: 0 auto;
+    width: 500px;
+}
+
+input {
+    height: 3vh;
+    border-color: #d3d3d3;
+    border-radius: 5px;
+    border-width: thin;
+    margin-bottom: 10px;
+}
+
+input[type='checkbox'] {
+    vertical-align: middle;
+    position: relative;
+}
+
+input:focus {
+    outline: none !important;
+    border-color: #87ceeb;
+    box-shadow: 0 0 5px #87ceeb;
+}
+
+#agree {
+    font-weight: bold;
+    font-size: 0.8rem;
+    margin-bottom: 10px;
+}
+
+#agreement {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+}
+
+#assigment-title {
+    text-align: center;
+}
+
+#first-name {
+    width: 46%;
+}
+
+#last-name {
+    width: 46%;
+    padding-right: 0 !important;
+    margin-right: 0 !important;
+}
+
+#password,
+#confirm-password {
+    width: 46%;
+}
+
+#register-anchor {
+    background-color: rgb(24, 144, 207);
+    border: none;
+    color: #ffffff;
+    font-size: 0.6rem;
+    padding: 3px;
+    border-radius: 6%;
+}
+
+#register-button {
+    background-color: rgb(24, 144, 207);
+    border: none;
+    width: 47%;
+    height: 4vh;
+    color: #ffffff;
+}
+
+#submit-button {
+    background-color: rgb(112, 184, 112);
+    border: none;
+    width: 47%;
+    height: 4vh;
+    color: #ffffff;
+}
+
+#terms {
+    width: 70%;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.name,
+.passwords {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-right: 0%;
+    padding-right: 0%;
+}
+
+.input-width {
+    width: 100%;
+}
+

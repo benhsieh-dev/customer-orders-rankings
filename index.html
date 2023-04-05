@@ -1,12 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    
-</body>
+    <link rel="stylesheet" href="./styles/styles.css" />
+  </head>
+  <body>
+    <main id="app">
+      <form action="" method="POST">
+        <h2 id="assigment-title">Sign Up</h1>
+
+        <div class="name">
+          <input type="text" id="first-name" placeholder="First Name" />
+          <input type="text" id="last-name" placeholder="Last Name" />
+        </div>
+
+        <div>
+          <input type="tel" class="input-width" placeholder="Mobile No." />
+        </div>
+  
+        <div>
+          <input type="email" class="input-width" placeholder="Email Address" />
+        </div>
+ 
+        <div class="passwords">
+          <input type="password" id="password" placeholder="Password" />
+          <input type="password" id="confirm-password" placeholder="Confirm Password" />
+        </div>
+
+        <div id="agreement">
+          <div>
+            <input type="checkbox" name="I agree" />
+            <label for="I agree"><span id="agree">I Agree</span></label>
+          </div>
+          <div id="terms">
+            <p>
+              By clicking <a href="www.google.com" id="register-anchor">Register</a>, you agree to the Terms and Conditions set out by
+              this site, including our Cookie Use.
+            </p>
+          </div>
+        </div>
+
+        <div class="buttons">
+          <input id="register-button" type="button" value="Register" />
+          <input id="submit-button" type="button" value="Submit" />
+        </div>
+      </form>
+    </main>
+  </body>
 </html>
