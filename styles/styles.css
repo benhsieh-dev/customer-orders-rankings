@@ -1,4 +1,4 @@
-#app {
+.app {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -11,6 +11,12 @@ form {
     width: 500px;
 }
 
+form {
+    width: 500px;
+    padding: 40px;
+    border-radius: 10px;
+}
+
 input {
     height: 3vh;
     border-color: #d3d3d3;
@@ -19,13 +25,17 @@ input {
     margin-bottom: 10px;
 }
 
+input[type='button'] {
+    cursor: pointer;
+}
+
 input[type='checkbox'] {
     vertical-align: middle;
     position: relative;
 }
 
 input:focus {
-    outline: none !important;
+    outline: none;
     border-color: #87ceeb;
     box-shadow: 0 0 5px #87ceeb;
 }
@@ -33,13 +43,12 @@ input:focus {
 #agree {
     font-weight: bold;
     font-size: 0.8rem;
-    margin-bottom: 10px;
 }
 
 #agreement {
     display: flex;
     flex-direction: row;
-    justify-content: space-between; 
+    justify-content: space-between;
 }
 
 #assigment-title {
@@ -47,18 +56,18 @@ input:focus {
 }
 
 #first-name {
-    width: 46%;
+    width: 47%;
 }
 
 #last-name {
-    width: 46%;
-    padding-right: 0 !important;
-    margin-right: 0 !important;
+    width: 47%;
+    padding-right: 0;
+    margin-right: 0;
 }
 
 #password,
 #confirm-password {
-    width: 46%;
+    width: 47%;
 }
 
 #register-anchor {
@@ -73,7 +82,7 @@ input:focus {
 #register-button {
     background-color: rgb(24, 144, 207);
     border: none;
-    width: 47%;
+    width: 48%;
     height: 4vh;
     color: #ffffff;
 }
@@ -81,13 +90,14 @@ input:focus {
 #submit-button {
     background-color: rgb(112, 184, 112);
     border: none;
-    width: 47%;
+    width: 48%;
     height: 4vh;
     color: #ffffff;
 }
 
 #terms {
-    width: 70%;
+    width: 60%;
+    font-size: 0.7rem;
 }
 
 .buttons {
@@ -101,11 +111,18 @@ input:focus {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-right: 0%;
-    padding-right: 0%;
 }
 
 .input-width {
-    width: 100%;
+    width: 99%;
 }
 
+.terms-and-conditions {
+    text-decoration: none;
+}
+
+@media (min-width: 300px) {
+    .app {
+        max-width: 600px;
+    }
+}
